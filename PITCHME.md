@@ -20,12 +20,12 @@
 - Mine the data |
 - Refine |
 - Build the model |
-<span style="color:red;font-weight:bold"> - Presenation </span> |
+- <span style="color:red;font-weight:bold">Presenation </span> |
 
 ---
 @title[bs4]
 # I heard
-<span style="font-size:0.6em>"beautifulsoup is easy to understand and build"</span>
+<span style="font-size:1.2em">"beautifulsoup is easy to understand and build"</span>
 <br>
 - Cool! I will build it with beautifulsoup then :D |
 
