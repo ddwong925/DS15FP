@@ -24,14 +24,16 @@
 
 ---
 @title[wunderground]
-## I heard
+# I heard
+<br>
 ### "beautifulsoup is easy to understand and build"
-
+<br>
+Cool! I will build it with beautifulsoup then :D
 +++
 @title[beautiful soup]
 ---image=assets/WU.png
 <!-- .slide: data-background-transition="none" -->
-Okay, I will build it with beautiful soup then
+
 
 +++
 @title[wunderground]
