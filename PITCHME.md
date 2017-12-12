@@ -23,16 +23,17 @@
 - Presenation |
 
 ---
-@title[wunderground]
+@title[bs4]
 # I heard
 <br>
 ### "beautifulsoup is easy to understand and build"
 <br>
-Cool! I will build it with beautifulsoup then :D
+Cool! I will build it with beautifulsoup then :D |
 +++
-@title[beautiful soup]
----image=assets/WU.png
-<!-- .slide: data-background-transition="none" -->
+@title[wunderground]
++++image=assets/WU.png
++++image=assets/WU2.png
+
 
 
 +++
