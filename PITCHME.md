@@ -27,12 +27,11 @@
 # I heard
 <br>
 ### "beautifulsoup is easy to understand and build"
-<br>
 Cool! I will build it with beautifulsoup then :D |
-+++
-@title[wunderground]
----?image=assets/WU.png&size=auto
----?image=assets/WU2.png
+
+
++++?image=assets/WU.png&size=auto
++++?image=assets/WU2.png
 
 
 
