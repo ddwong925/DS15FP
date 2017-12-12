@@ -25,13 +25,15 @@
 ---
 @title[bs4]
 # I heard
+"beautifulsoup is easy to understand and build"
 <br>
-### "beautifulsoup is easy to understand and build"
 Cool! I will build it with beautifulsoup then :D |
 
 
 +++?image=assets/WU.png&size=auto
-+++?image=assets/WU2.png
++++?image=assets/WU2.png&size=auto
++++title[scrape]
+
 
 
 
