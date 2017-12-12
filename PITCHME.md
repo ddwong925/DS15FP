@@ -32,7 +32,9 @@
 
 +++?image=assets/WU.png&size=auto
 +++?image=assets/WU2.png&size=auto
-+++title[scrape]
+
++++
+@title[scrape]
 ##### TO-DO:
 - <span class="red"> Collect and scrape data </span>
 - Clean them 
@@ -42,7 +44,8 @@
 - Build the model 
 - Presenation 
 
-+++title[bs1]
++++
+@title[bs1]
 ### My 1st crawler:<span class="gold"> Copy and paste</span>
 
 ```python
