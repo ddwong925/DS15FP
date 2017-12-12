@@ -25,7 +25,7 @@
 ---
 @title[bs4]
 # I heard
-<span style="font-size:1.2em">"beautifulsoup is easy to understand and build"</span>
+<span style="font-size:1.5em">"beautifulsoup is easy to understand and build"</span>
 <br>
 - Cool! I will build it with beautifulsoup then :D |
 
@@ -163,6 +163,9 @@ f.close()
 @title[bs1.3]
 <span style="font-size:1.2em">After N-th trial, I got my first set of data</span>
 <br>
+- 300,000 rows+
+- 10+ features |
+
 +++?image=assets/WU4.png&size=contain
 +++?image=assets/WU5.png&size=contain
 +++
@@ -171,4 +174,91 @@ f.close()
 - Time to build my 2nd Crawler... |
 
 +++?image=assets/HKO1.png&size=contain
++++
+@title[bs2.1]
+### My 2nd crawler:<span class="gold"> Copy and paste (MOSTLY)</span>
+```python
+try:
+        text = str(soup.find('pre').text)
+
+        timestamp = str(y)+'-'+str(mm)+'-'+str(dd)
+        print timestamp
+
+        max_temp_text = re.search('MAX.*[0123456789.]+',text, re.IGNORECASE).group(0)
+        max_temp = re.findall('[0123456789.]+',max_temp_text)
+        print max_temp
+        min_temp_text = re.search('MIN.*[0123456789.]+',text, re.IGNORECASE).group(0)
+        min_temp = re.findall('[0123456789.]+',min_temp_text)
+        print min_temp
+        grass_temp_text = re.search('GRASS.*[0123456789.]+',text, re.IGNORECASE).group(0)
+        grass_temp = re.findall('[0123456789.]+',grass_temp_text)
+        print grass_temp
+        min_hum_text = re.search('REL.*[0123456789.]+.*-',text, re.IGNORECASE).group(0)
+        min_hum = re.findall('[0123456789.]+',min_hum_text)
+        print min_hum
+        max_hum_text = re.search('-.*[0123456789.]+.*PER',text, re.IGNORECASE).group(0)
+        max_hum = re.findall('[0123456789.]+',max_hum_text)
+        print max_hum
+        rainfall_text = re.search('RAIN.*\n',text, re.IGNORECASE).group(0)
+        rainfall = re.findall('[0123456789.]+|TRACE|trace|Trace',rainfall_text)
+        print rainfall
+        sun_text = re.search('DURA.*[0123456789.]+',text, re.IGNORECASE).group(0)
+        sun = re.findall('[0123456789.]+',sun_text)
+        print sun     
+        uv_text = re.search('UV INDEX.*\n.*INTEN', text, re.IGNORECASE).group(0)
+        uv = re.findall('[0123456789.]+',uv_text)
+        print uv
+      
+      except:
+        text = np.nan
+```
+@[1-30](Time to learn Regex!)
+
++++
+@title[bs2.2]
+####Results from 2nd Crawler
+- 6460 rows of data
+- 8 features |
+- HKO data is clean |
+
+---
+@title[Parse1]
+##### TO-DO:
+- <strike>Collect and scrape data </strike>
+- <strike>Clean them </strike>
+- <span style="color:red;font-weight:bold">Parse data </span>
+- Mine the data 
+- Refine 
+- Build the model 
+- Presenation 
+
++++
+@title[Parse2]
+####Parsing the data
+```python
+train = pd.read_csv("HK_weather.csv",index_col=None,parse_dates = [1])
+
+train['Date'] = pd.to_datetime(train['Date'])
+train.set_index('Date', inplace = True)
+
+train.sample(10)
+```
++++?image=assets/P1.png&size=contain
++++
+@title[data_dict]
+## Data Dictionary
+
+1. __Date__: 2000-4-1 to 2017-12-8
+> - Training set: 2000-4-1 to 2012-8-17
+> - Testing set: 2012-8-18 to 2017-12-7
+2. __max_temp__: Maximum temperature of the day (Degree Celcius)
+3. __min_temp__: Minimum temperature of the day (Degree Celcius)
+4. __grass_temp__: The temperature on the surface of the grass, which is around 10-15 cm (Degree Celcius)
+5. __max_humid__: Maximum humidity of the day (%)
+6. __min_humid__: Minimum humidity of the day (%)
+7. __rainfall__: The amount of rainfall of the day (mm) - __[Rainfall categories](https://en.wikipedia.org/wiki/Precipitation_types#Intensity)__
+8. __sunshine__: The duration of sunshine at King's Park (Hours)
+9. __UV__: Mean UV index of the day at Kings Park - __[UV Index categoriries](http://www.hko.gov.hk/wxinfo/uvindex/english/whatisUVI.htm)__
+
++++
 
