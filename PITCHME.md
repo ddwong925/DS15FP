@@ -30,7 +30,8 @@
 +++
 @title[beautiful soup]
 Okay, I will build it with beautiful soup then 
-
+---image=assets/WU.png
+<!-- .slide: data-background-transition="none" -->
 
 +++
 @title[wunderground]
