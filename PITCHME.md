@@ -20,7 +20,7 @@
 - Mine the data |
 - Refine |
 - Build the model |
-- <span class="red"> Presenation </span> 
+<span style="color:red;font-weight:bold"> - Presenation </span> |
 
 ---
 @title[bs4]
