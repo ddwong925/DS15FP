@@ -31,10 +31,9 @@
 Cool! I will build it with beautifulsoup then :D |
 +++
 @title[wunderground]
-+++?image=assets/WU.png
-<!-- .slide: data-background-transition="none" -->
-+++?image=assets/WU2.png
-<!-- .slide: data-background-transition="none" -->
+---?image=assets/WU.png&size=auto
+---?image=assets/WU2.png
+
 
 
 
