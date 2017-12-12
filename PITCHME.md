@@ -1,6 +1,6 @@
 @title[Introduction]
 ## My first Data Science Project
-<span style="font-family:Helvetica Neue; font-weight:bold">From <span style="color:#e49436">nothing</span> to <span style="color:#e49436"> something</span></span>
+<span style="font-family:Helvetica Neue; font-weight:bold">From <span style="color:#e49436">NOTHING</span> to <span style="color:#e49436">SOMETHNG</span></span>
 
 ---
 @title[My first DS project]
@@ -13,7 +13,7 @@
 ## Create a better model than the Hong Kong Observatory.
 
 +++
-##### Like most of us, TO-DO:
+##### <span style="color:#e49436">TO-DO:</span>
 - Collect and scrape data
 - Clean them |
 - Parse data |
@@ -24,10 +24,10 @@
 
 ---
 @title[bs4]
-# I heard
-<span style="font-size:1.5em">"beautifulsoup is easy to understand and build"</span>
+## I heard
+<span style="font-size:1.3em">"beautifulsoup is easy to understand and build"</span>
 <br>
-- Cool! I will build it with beautifulsoup then :D |
+- Cool! I will build it with beautifulsoup then |
 
 
 +++?image=assets/WU.png&size=contain
@@ -35,7 +35,7 @@
 
 +++
 @title[scrape]
-##### TO-DO:
+##### <span style="color:#e49436">TO-DO:</span>
 - <span style="color:red;font-weight:bold">Collect and scrape data </span>
 - Clean them 
 - Parse data 
@@ -46,7 +46,7 @@
 
 +++
 @title[bs1.1]
-### My 1st crawler:<span class="gold"> Copy and paste (MOSTLY)</span>
+##### <span style="color:#e49436">My 1st crawler:</span> Copy and paste (MOSTLY)
 
 ```python
 f = open('wunder-data.txt', 'w')
@@ -153,7 +153,7 @@ f.close()
 
 +++
 @title[bs1.2]
-### oops, something's missing
+##### oops, something's missing
 - Error handling
 - Data inconsistency
 
@@ -161,7 +161,7 @@ f.close()
 
 +++
 @title[bs1.3]
-<span style="font-size:1.2em">After N-th trial, I got my first set of data</span>
+<span style="font-size:1.2em ; color:#e49436">After N-th trial, I got my first set of data</span>
 <br>
 - 300,000 rows+
 - 10+ features |
@@ -176,7 +176,7 @@ f.close()
 +++?image=assets/HKO1.png&size=contain
 +++
 @title[bs2.1]
-### My 2nd crawler:<span class="gold"> Copy and paste (MOSTLY)</span>
+##### <span style="color:#e49436"> My 2nd crawler:</span> Copy and paste (AGAIN)
 ```python
 try:
         text = str(soup.find('pre').text)
@@ -216,14 +216,14 @@ try:
 
 +++
 @title[bs2.2]
-####Results from 2nd Crawler
+### <span style="color:#e49436">Results from 2nd Crawler</span>
 - 6460 rows of data
 - 8 features |
-- HKO data is clean |
+- HKO data is cleaner |
 
 ---
 @title[Parse1]
-##### TO-DO:
+##### <span style="color:#e49436">TO-DO:</span>
 - <strike>Collect and scrape data </strike>
 - <strike>Clean them </strike>
 - <span style="color:red;font-weight:bold">Parse data </span>
@@ -234,7 +234,7 @@ try:
 
 +++
 @title[Parse2]
-####Parsing the data
+##### <span style="color:#e49436">Parsing the data</span>
 ```python
 train = pd.read_csv("HK_weather.csv",index_col=None,parse_dates = [1])
 
@@ -243,22 +243,17 @@ train.set_index('Date', inplace = True)
 
 train.sample(10)
 ```
-+++?image=assets/P1.png&size=contain
++++?image=assets/P1.png&size=auto 75%
 +++
 @title[data_dict]
-## Data Dictionary
+##### <span style="color:#e49436"> Data Dictionary</span>
 
 1. __Date__: 2000-4-1 to 2017-12-8
 > - Training set: 2000-4-1 to 2012-8-17
 > - Testing set: 2012-8-18 to 2017-12-7
 2. __max_temp__: Maximum temperature of the day (Degree Celcius)
 3. __min_temp__: Minimum temperature of the day (Degree Celcius)
-4. __grass_temp__: The temperature on the surface of the grass, which is around 10-15 cm (Degree Celcius)
-5. __max_humid__: Maximum humidity of the day (%)
-6. __min_humid__: Minimum humidity of the day (%)
-7. __rainfall__: The amount of rainfall of the day (mm) - __[Rainfall categories](https://en.wikipedia.org/wiki/Precipitation_types#Intensity)__
-8. __sunshine__: The duration of sunshine at King's Park (Hours)
-9. __UV__: Mean UV index of the day at Kings Park - __[UV Index categoriries](http://www.hko.gov.hk/wxinfo/uvindex/english/whatisUVI.htm)__
+4. ... ...
 
-+++
-
++++?image=assets/P2.png&size=auto 75%
++++?image=assets/P3.png&size=auto 75%
