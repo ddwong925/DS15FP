@@ -158,6 +158,7 @@ f.close()
 - Data inconsistency
 
 +++?image=assets/WU3.png&size=contain
+
 +++
 @title[bs1.3]
 <span style="font-size:1.2em">After N-th trial, I got my first set of data</span>
@@ -167,7 +168,7 @@ f.close()
 +++
 @title[bs1.4]
 <strike> My first set of data </strike>
-Time to build my 2nd Crawler...
+- Time to build my 2nd Crawler... |
 
 +++?image=assets/HKO1.png&size=contain
 
