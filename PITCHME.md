@@ -20,12 +20,12 @@
 - Mine the data |
 - Refine |
 - Build the model |
-- <span class="red"> Presenation </span> |
+- <span class="red"> Presenation </span> 
 
 ---
 @title[bs4]
 # I heard
-"beautifulsoup is easy to understand and build"
+<span style="font-size:0.6em>"beautifulsoup is easy to understand and build"</span>
 <br>
 - Cool! I will build it with beautifulsoup then :D |
 
@@ -45,7 +45,7 @@
 - Presenation 
 
 +++
-@title[bs1]
+@title[bs1.1]
 ### My 1st crawler:<span class="gold"> Copy and paste</span>
 
 ```python
@@ -77,8 +77,6 @@ for y in range(2000, 2001):
         continue
       elif (m in [4, 6, 9, 11] and d > 30):
         continue
-      #elif (m in [1,3,5,7,8,10,12] and d >31):
-        #continue
  
 
       # Open wunderground.com url
@@ -101,8 +99,6 @@ for y in range(2000, 2001):
       
         Time = col[0].string.strip()
         Temp = col[1].text.strip()
-        
-
         Dew_point = col[2].text.strip()
         Humidity = col[3].text.strip()
         Pressure = col[4].text.strip()
@@ -149,17 +145,20 @@ for y in range(2000, 2001):
           Conditions + "," +
           Metar + "," +
           "\n").encode("utf-8-sig"))
-# Done getting data! Close file.
 f.close()
 ```
-
-
+@[51-65](Table extraction)
+@[88-101](Export to .CSV)
+@[18-33](Lifesaver: Leap Year Handling)
 
 +++
-@title[wunderground]
-+++?image=assets/WU.png
-<br>
-<!-- .slide: data-background-transition="none" -->
+@title[bs1.2]
+### oops, something's missing
+- Error handling
+- Data in
+
+
+
 ---
 @title[Go Fullscreen]
 
