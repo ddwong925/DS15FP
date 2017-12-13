@@ -44,17 +44,6 @@
 +++?image=assets/WU2.png&size=contain
 
 +++
-@title[scrape]
-##### <span style="color:#e49436">TO-DO:</span>
-- <span style="color:red;font-weight:bold">Collect and scrape data </span>
-- Clean them 
-- Parse data 
-- Mine the data 
-- Build the model 
-- Test the model 
-- Presenation 
-
-+++
 @title[bs1.1]
 ##### <span style="color:#e49436">My 1st crawler:</span> Copy and paste (MOSTLY)
 
