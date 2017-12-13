@@ -345,6 +345,7 @@ model.summary()
 ```
 @[1-9](Mean absolute error =  26.316174)
 +++?image=assets/m3.png&size=contain
++++?image=assets/d2.png&size=contain
 +++
 @title[GS]
 ##### Finding the best model
@@ -374,3 +375,33 @@ for p in range(1,3):
 - Presenation
 +++?image=assets/pred0.png&size=contain
 +++?image=assets/pred1.png&size=contain
+@title[pred]
+##### Final result.head()
+<br>
+| Date | Actual data | Prediction |
+| ---- | :------: | :--------: |
+| 2012-08-18 | 32.6 | 30.0501646948 |
+| 2012-08-19 | 32.0 | 30.6953816121 |
+| 2012-08-20 | 32.9 | 30.6185294106 |
+| 2012-08-21 | 31.6 | 30.5429358395 |
+| 2012-08-22 | 28.9 | 30.4685802858 |
+
+---
+@title[pre]
+##### <span style="color:#e49436">TO-DO:</span>
+- <strike>Collect and scrape data </strike>
+- <strike>Clean them </strike>
+- <strike>Parse data </strike>
+- <strike>Mine the data</strike>
+- <strike>Build the model </strike>
+- <strike>Test the model </strike>
+- <span style="color:red;font-weight:bold"> Presenation </span>
+
++++
+@title[next]
+##### Next
+- Get more data?
+- SARIMAX model: include seasonality |
+- Features in ARIMA : input extra features in the ARIMA |
+- MORE STUDY and GOOD LUCK TO ALL |
+- Q & A? |
