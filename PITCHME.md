@@ -151,21 +151,20 @@ f.close()
 @[13-28](Lifesaver: Leap Year Handling)
 
 +++
-@title[bs1.2]
-##### oops, something's missing
-- Error handling
-- Data inconsistency
-
-+++?image=assets/WU3.png&size=contain
-
-+++
 @title[bs1.3]
 <span style="font-size:1.2em ; color:#e49436">After N-th trial, I got my first set of data</span>
 <br>
 - 300,000 rows+
 - 10+ features |
 
++++
+@title[bs1.2]
+##### oops, something's missing
+- Error handling
+- Data inconsistency
+
 +++?image=assets/WU4.png&size=contain
++++?image=assets/WU3.png&size=contain
 +++?image=assets/WU5.png&size=contain
 +++
 @title[bs1.4]
