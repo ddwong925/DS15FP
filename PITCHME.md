@@ -157,13 +157,13 @@ f.close()
 - 300,000 rows+
 - 10+ features |
 
++++?image=assets/WU4.png&size=contain
 +++
 @title[bs1.2]
 ##### oops, something's missing
 - Error handling
 - Data inconsistency
 
-+++?image=assets/WU4.png&size=contain
 +++?image=assets/WU5.png&size=contain
 +++?image=assets/WU3.png&size=contain
 
