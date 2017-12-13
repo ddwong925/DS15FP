@@ -15,14 +15,24 @@
 +++
 ##### <span style="color:#e49436">TO-DO:</span>
 - Collect and scrape data
-- Clean them |
-- Parse data |
-- Mine the data |
-- Build the model |
-- Test the model |
-- <span style="color:red;font-weight:bold">Presenation </span> |
+- Clean them 
+- Parse data 
+- Mine the data 
+- Build the model 
+- Test the model 
+- <span style="color:red;font-weight:bold">Presenation </span>
 
 ---
+##### <span style="color:#e49436">TO-DO:</span>
+- <span style="color:red;font-weight:bold">Collect and scrape data </span>
+- Clean them 
+- Parse data 
+- Mine the data 
+- Build the model 
+- Test the model 
+- Presenation 
+
++++
 @title[bs4]
 ## I heard
 <span style="font-size:1.3em">"beautifulsoup is easy to understand and build"</span>
@@ -279,12 +289,13 @@ train.sample(10)
 - <strike>Collect and scrape data </strike>
 - <strike>Clean them </strike>
 - <strike>Parse data </strike>
-- <span style="color:red;font-weight:bold">Mine the data</span>
-- Build the model 
+- <strike>Mine the data</strike>
+- <span style="color:red;font-weight:bold">Build the model </span>
 - Test the model 
 - Presenation
 
 +++
+@title[arima100]
 ##### Build the model with AR(1)
 ```python
 model = ARIMA(train['max_temp'],(1, 0, 0)).fit()
@@ -301,6 +312,7 @@ model.summary()
 @[1-10](Mean absolute error = 4.723896)
 +++?image=assets/m1.png&size=contain
 +++
+@title[arima101]
 ##### Build the model with ARMA(1,1)
 ```python
 model = ARIMA(train['max_temp'], (1,0,1)).fit()
@@ -315,8 +327,50 @@ model.summary()
 
 # From the result, we can see the ARMA(2,2) helps lowering my mean absolute error
 ```
-@[](Mean absolute error = 4.723468)
-+++?image=assets/m1.png&size=contain
+@[1-11](Mean absolute error = 4.723468)
++++?image=assets/m2.png&size=contain
 
 +++
+@title[arima111]
+```python
+model = ARIMA(train['max_temp'], (1,1,1)).fit()
 
+predictions = model.predict(
+    '2012-8-18',
+    '2017-12-7',
+    dynamic=True,
+    )
+print("Mean absolute error: ", mean_absolute_error(test['max_temp'], predictions))
+model.summary()
+```
+@[1-9](Mean absolute error =  26.316174)
++++?image=assets/m3.png&size=contain
++++
+@title[GS]
+##### Finding the best model
+```python
+for p in range(1,3):
+    for q in range (0,3):
+        for d in [0,1]:
+            model = ARIMA(train['max_temp'], (p,d,q)).fit()
+
+            predictions = model.predict(
+                '2012-8-18',
+                '2017-12-7',
+                dynamic=True,
+                )
+            print("p:{}, q:{},d:{}, Mean absolute error: ".format(p,q,d), mean_absolute_error(test['max_temp'], predictions))
+```
++++?image=assets/GS.png&size=contain
+---
+@title[test]
+##### <span style="color:#e49436">TO-DO:</span>
+- <strike>Collect and scrape data </strike>
+- <strike>Clean them </strike>
+- <strike>Parse data </strike>
+- <strike>Mine the data</strike>
+- <strike>Build the model </strike>
+- <span style="color:red;font-weight:bold">Test the model </span>
+- Presenation
++++?image=assets/pred0.png&size=contain
++++?image=assets/pred1.png&size=contain
