@@ -164,8 +164,9 @@ f.close()
 - Data inconsistency
 
 +++?image=assets/WU4.png&size=contain
-+++?image=assets/WU3.png&size=contain
 +++?image=assets/WU5.png&size=contain
++++?image=assets/WU3.png&size=contain
+
 +++
 @title[bs1.4]
 <strike> My first set of data </strike>
