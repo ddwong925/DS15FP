@@ -1,6 +1,6 @@
 @title[Introduction]
 ## My first Data Science Project
-<span style="font-family:Helvetica Neue; font-weight:bold">From <span style="color:#e49436">NOTHING</span> to <span style="color:#e49436">SOMETHNG</span></span>
+<span style="font-family:Helvetica Neue; font-weight:bold">From <span style="color:#e49436">NOTHING</span> to <span style="color:#e49436">SOMETHING</span></span>
 
 ---
 @title[My first DS project]
