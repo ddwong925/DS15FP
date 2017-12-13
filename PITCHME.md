@@ -160,7 +160,7 @@ f.close()
 +++?image=assets/WU4.png&size=contain
 +++
 @title[bs1.2]
-##### oops, something's missing
+##### oops, something's wrong
 - Error handling
 - Data inconsistency
 
