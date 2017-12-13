@@ -255,5 +255,5 @@ train.sample(10)
 3. __min_temp__: Minimum temperature of the day (Degree Celcius)
 4. ... ...
 
-+++?image=assets/P2.png&size=auto 75%
-+++?image=assets/P3.png&size=auto 75%
++++?image=assets/P2.png&size=75% 75%
++++?image=assets/P3.png&size=75% 75%
