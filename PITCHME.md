@@ -399,9 +399,9 @@ for p in range(1,3):
 - Features in ARIMA : input extra features in the ARIMA |
 - MORE STUDY and GOOD LUCK TO ALL |
 - Q & A? |
-+++
+---
 @title[last]
-###Last but not least,
+### Last but not least,
 Maximum temperature for tomorrow and Friday:
 2017-12-14    20.302945
 2017-12-15    20.392911
