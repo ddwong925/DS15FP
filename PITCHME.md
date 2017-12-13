@@ -161,7 +161,7 @@ f.close()
 +++
 @title[bs1.2]
 ##### oops, something's wrong
-- Error handling
+- No error handling
 - Data inconsistency
 
 +++?image=assets/WU5.png&size=contain
