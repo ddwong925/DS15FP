@@ -353,6 +353,7 @@ for p in range(1,3):
             print("p:{}, q:{},d:{}, Mean absolute error: ".format(p,q,d), mean_absolute_error(test['max_temp'], predictions))
 ```
 +++?image=assets/GS.png&size=contain
++++?image=assets/m4.png&size=contain
 ---
 @title[test]
 ##### <span style="color:#e49436">TO-DO:</span>
