@@ -332,6 +332,7 @@ model.summary()
 
 +++
 @title[arima111]
+##### Build the model with ARIMA(1,1,1)
 ```python
 model = ARIMA(train['max_temp'], (1,1,1)).fit()
 
@@ -378,7 +379,7 @@ for p in range(1,3):
 
 +++
 @title[pred]
-##### Final result.head()
+##### PRINT Final result.head()
 
 | Date | Actual data | Prediction |
 | ---- | :------: | :--------: |
