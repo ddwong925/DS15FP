@@ -18,8 +18,8 @@
 - Clean them |
 - Parse data |
 - Mine the data |
-- Refine |
 - Build the model |
+- Test the model |
 - <span style="color:red;font-weight:bold">Presenation </span> |
 
 ---
@@ -40,8 +40,8 @@
 - Clean them 
 - Parse data 
 - Mine the data 
-- Refine 
 - Build the model 
+- Test the model 
 - Presenation 
 
 +++
@@ -228,8 +228,8 @@ try:
 - <strike>Clean them </strike>
 - <span style="color:red;font-weight:bold">Parse data </span>
 - Mine the data 
-- Refine 
 - Build the model 
+- Test the model 
 - Presenation 
 
 +++
@@ -243,7 +243,7 @@ train.set_index('Date', inplace = True)
 
 train.sample(10)
 ```
-+++?image=assets/P1.png&size=auto 75%
++++?image=assets/P1.png&size=contain
 +++
 @title[data_dict]
 ##### <span style="color:#e49436"> Data Dictionary</span>
@@ -255,5 +255,68 @@ train.sample(10)
 3. __min_temp__: Minimum temperature of the day (Degree Celcius)
 4. ... ...
 
-+++?image=assets/P2.png&size=75% 75%
-+++?image=assets/P3.png&size=75% 75%
++++?image=assets/P2.png&size=contain
+
+
+---
+@title[mine1]
+##### <span style="color:#e49436">TO-DO:</span>
+- <strike>Collect and scrape data </strike>
+- <strike>Clean them </strike>
+- <strike>Parse data </strike>
+- <span style="color:red;font-weight:bold">Mine the data</span>
+- Build the model 
+- Test the model 
+- Presenation
+
++++?image=assets/P3.png&size=contain
++++?image=assets/acf.png&size=contain
++++?image=assets/P4.png&size=contain
+
+---
+@title[build]
+##### <span style="color:#e49436">TO-DO:</span>
+- <strike>Collect and scrape data </strike>
+- <strike>Clean them </strike>
+- <strike>Parse data </strike>
+- <span style="color:red;font-weight:bold">Mine the data</span>
+- Build the model 
+- Test the model 
+- Presenation
+
++++
+##### Build the model with AR(1)
+```python
+model = ARIMA(train['max_temp'],(1, 0, 0)).fit()
+
+predictions = model.predict(
+    '2012-8-18',
+    '2017-12-7',
+    dynamic=False, 
+)
+
+print("Mean absolute error: ", mean_absolute_error(test['max_temp'], predictions))
+model.summary()
+```
+@[1-10](Mean absolute error = 4.723896)
++++?image=assets/m1.png&size=contain
++++
+##### Build the model with ARMA(1,1)
+```python
+model = ARIMA(train['max_temp'], (1,0,1)).fit()
+
+predictions = model.predict(
+    '2012-8-18',
+    '2017-12-7',
+    dynamic=True,
+    )
+print("Mean absolute error: ", mean_absolute_error(test['max_temp'], predictions))
+model.summary()
+
+# From the result, we can see the ARMA(2,2) helps lowering my mean absolute error
+```
+@[](Mean absolute error = 4.723468)
++++?image=assets/m1.png&size=contain
+
++++
+
