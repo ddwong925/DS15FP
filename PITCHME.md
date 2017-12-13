@@ -380,8 +380,6 @@ for p in range(1,3):
 @title[pred]
 ##### Final result.head()
 
-<br>
-
 | Date | Actual data | Prediction |
 | ---- | :------: | :--------: |
 | 2012-08-18 | 32.6 | 30.05016 |
