@@ -375,6 +375,8 @@ for p in range(1,3):
 - Presenation
 +++?image=assets/pred0.png&size=contain
 +++?image=assets/pred1.png&size=contain
+
++++
 @title[pred]
 ##### Final result.head()
 <br>
