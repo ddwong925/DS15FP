@@ -20,7 +20,7 @@
 - Mine the data 
 - Build the model 
 - Test the model 
-- <span style="color:red;font-weight:bold">Presenation </span>
+- <span style="color:red;font-weight:bold">Presentation </span>
 
 ---
 ##### <span style="color:#e49436">TO-DO:</span>
@@ -30,7 +30,7 @@
 - Mine the data 
 - Build the model 
 - Test the model 
-- Presenation 
+- Presentation 
 
 +++
 @title[bs4]
@@ -160,8 +160,8 @@ f.close()
 +++?image=assets/WU4.png&size=contain
 +++
 @title[bs1.2]
-##### oops, something's missing
-- Error handling
+##### oops, something's wrong
+- No error handling
 - Data inconsistency
 
 +++?image=assets/WU5.png&size=contain
@@ -229,7 +229,7 @@ try:
 - Mine the data 
 - Build the model 
 - Test the model 
-- Presenation 
+- Presentation 
 
 +++
 @title[Parse2]
@@ -266,7 +266,7 @@ train.sample(10)
 - <span style="color:red;font-weight:bold">Mine the data</span>
 - Build the model 
 - Test the model 
-- Presenation
+- Presentation
 
 +++?image=assets/P3.png&size=contain
 +++?image=assets/acf.png&size=contain
@@ -281,7 +281,7 @@ train.sample(10)
 - <strike>Mine the data</strike>
 - <span style="color:red;font-weight:bold">Build the model </span>
 - Test the model 
-- Presenation
+- Presentation
 
 +++
 @title[arima100]
@@ -364,7 +364,7 @@ for p in range(1,3):
 - <strike>Mine the data</strike>
 - <strike>Build the model </strike>
 - <span style="color:red;font-weight:bold">Test the model </span>
-- Presenation
+- Presentation
 +++?image=assets/pred0.png&size=contain
 +++?image=assets/pred1.png&size=contain
 
@@ -389,7 +389,7 @@ for p in range(1,3):
 - <strike>Mine the data</strike>
 - <strike>Build the model </strike>
 - <strike>Test the model </strike>
-- <span style="color:red;font-weight:bold"> Presenation </span>
+- <span style="color:red;font-weight:bold"> Presentation </span>
 
 +++
 @title[next]
@@ -399,3 +399,14 @@ for p in range(1,3):
 - Features in ARIMA : input extra features in the ARIMA |
 - MORE STUDY and GOOD LUCK TO ALL |
 - Q & A? |
+---
+@title[last]
+### Last but not least,
+Maximum temperature for tomorrow and Friday:
+
+| Date | My prediction | HKO prediction |
+| ---- | :-------: | :--------: |
+| 2017-12-14 | 20.302945 | 20 |
+| 2017-12-15 | 20.392911 | 22 |
+
+- Thank you all for listening :) |
