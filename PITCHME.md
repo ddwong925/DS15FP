@@ -403,7 +403,10 @@ for p in range(1,3):
 @title[last]
 ### Last but not least,
 Maximum temperature for tomorrow and Friday:
-2017-12-14    20.302945
-2017-12-15    20.392911
 
-Thank you all for listening :)
+| Date | My prediction | HKO prediction |
+| ---- | :-------: | :--------: |
+| 2017-12-14 | 20.302945 | 20 |
+| 2017-12-15 | 20.392911 | 22 |
+
+- Thank you all for listening :) |
